@@ -9,7 +9,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.picosmokedemo.p7c91e42a"
+        applicationId = "cn.mindsoul.focusflight"
         minSdk = 35
         targetSdk = 35
         versionCode = 3

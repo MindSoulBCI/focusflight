@@ -37,7 +37,11 @@ import kotlinx.coroutines.*
 
 @Composable fun FlightScreen() {
  val navigator=LocalSpatialNavigator.current
- LaunchedEffect(Unit){navigator.openWindowContainer("MindSoulAccount",tag="account")}
+ LaunchedEffect(Unit){
+  navigator.openWindowContainer("FlightConsole",tag="console")
+  navigator.openWindowContainer("CoinScore",tag="coins")
+  navigator.openWindowContainer("MindSoulLogin",tag="login")
+ }
  var targetRing by remember { mutableStateOf<Entity?>(null) }
  val engine=remember { FlightSession.engine }
  val brainLink=remember { FlightSession.brainLink }

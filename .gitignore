@@ -9,3 +9,6 @@
 /captures/
 .externalNativeBuild/
 .cxx/
+
+# local config (sdk paths)
+local.properties
